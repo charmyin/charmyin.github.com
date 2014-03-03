@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Index"
+title: "indexpage"
 description: ""
 ---
-{% include JB/setup %}
+Hello boy
