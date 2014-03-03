@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "indexpage"
+title: "Welcome Page"
 description: ""
 ---
-Hello boy
+
+## Welcome to charmyin's blog~
+
