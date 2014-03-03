@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "First Test"
+title: "IndexPage"
 description: ""
 category: 
 tags: []
 ---
-This is the first test
+This is charmyin's blog, Thanks^_^
