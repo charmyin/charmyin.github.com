@@ -4,5 +4,5 @@ title: "Welcome Page"
 description: ""
 ---
 
-## Welcome to charmyin's blog~ hahahah
+## Welcome to charmyin's blog~
 
