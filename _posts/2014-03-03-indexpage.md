@@ -2,7 +2,7 @@
 layout: post
 title: "IndexPage"
 description: ""
-category: 
+category:
 tags: []
 ---
 This is charmyin's blog, Thanks^_^
