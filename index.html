@@ -12,11 +12,13 @@ description: ""
     </tr>
   </thead>
   <tbody>
+  {% assign count = 1 %}
   {% for post in site.posts %}
     <tr>
-      <td><a href="{{ BASE_PATH }}{{post.url}}">{{ post.title }}</a></td>
+      <td>{% increment count %}. &nbsp;<a href="{{ BASE_PATH }}{{post.url}}">{{ post.title }}</a></td>
       <td style="text-align:right;">{{ post.date | date: '%Y-%m-%d' }}</td>
     </tr>
+
   {% endfor %}
   </tbody>
 </table>
