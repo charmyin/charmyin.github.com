@@ -15,7 +15,7 @@ description: ""
   {% assign count = 1 %}
   {% for post in site.posts %}
     <tr>
-      <td>{% increment count %}. &nbsp;<a href="{{ BASE_PATH }}{{post.url}}">{{ post.title }}</a></td>
+      <td><span class="label label-info">{% increment count %}.</span> &nbsp;&nbsp;<a href="{{ BASE_PATH }}{{post.url}}">{{ post.title }}</a></td>
       <td style="text-align:right;">{{ post.date | date: '%Y-%m-%d' }}</td>
     </tr>
 
