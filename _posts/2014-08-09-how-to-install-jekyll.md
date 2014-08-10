@@ -20,9 +20,9 @@ tags: [jekyll, installation]
 
 2. Install jekyll
      * Enter the following code
- 
+
      gem install jekyll -V
      jekyll new my-awesome-site
      cd my-awesome-site
      jekyll serve
- 
+
