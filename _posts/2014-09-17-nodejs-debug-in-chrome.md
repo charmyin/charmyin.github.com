@@ -8,10 +8,26 @@ tags: [nodejs, javascript, debug]
 
 Via [基于Chrome浏览器的调试器](http://www.cnblogs.com/moonz-wu/archive/2012/01/15/2322120.html)
 
+### windows简单版步骤
+
+**1.CMD中运行：**
+
+````node-inspector````
+
+**2.CMD运行:**
+
+````node --debug server.js````
+
+**3.在浏览器中输入：**
+
+````http://localhost:8080/debug?port=5858````
+
+
+<hr/>
 
 既然我们可以通过V8的调试插件来调试，那是否也可以借用Chrome浏览器的JavaScript调试器来调试呢？node-inspector模块提供了这样一种可能。我们需要先通过npm来安装node-inspector
 
-	```npm install -g node-inspector  // -g 导入安装路径到环境变量```
+````npm install -g node-inspector  // -g 导入安装路径到环境变量````
 
 node-inspector是通过websocket方式来转向debug输入输出的。因此，我们在调试前要先启动node-inspector来监听Nodejs的debug调试端口。
 
