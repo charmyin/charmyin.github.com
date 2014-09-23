@@ -53,10 +53,10 @@ tags: [linux, fdisk]
   **例如挂载````/dev/hdb1````分区到````/mnt/hd````目录下**
 　**用vi编辑````/etc/fstab````文件，加入如下内容**
 
-　　````/dev/sdb1      /home                ext4     default       0         0````
+　　````/dev/sdb1      /home                ext4     defaults       0         0````
 
-　　````/dev/sdb5      /yammy/appSpace      ext4     default       0         0````
+　　````/dev/sdb5      /yammy/appSpace      ext4     defaults       0         0````
 　　
 
-　　````/dev/sdb6      /yammy/documents     ext4     default       0         0````
+　　````/dev/sdb6      /yammy/documents     ext4     defaults       0         0````
 
