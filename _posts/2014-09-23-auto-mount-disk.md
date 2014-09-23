@@ -57,5 +57,6 @@ tags: [linux, fdisk]
 
 　　````/dev/sdb5      /yammy/appSpace      ext4     default       0         0````
 　　
+
 　　````/dev/sdb6      /yammy/documents     ext4     default       0         0````
 
