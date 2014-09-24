@@ -3,7 +3,7 @@ layout: post
 title: "Steps to install jekyll on windows"
 description: "Jekyll installation instruction"
 category: [jekyll]
-tags: [jekyll, installation]
+tags: [jekyll, ruby]
 ---
 
 1. Install ruby
