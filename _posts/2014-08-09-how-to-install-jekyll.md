@@ -13,16 +13,21 @@ tags: [jekyll, installation]
         * then open and cmd window,enter the following commands
 
 
-	chdir --Path where you extract: D:/devkit--
-	ruby dk.rb init
-	ruby dk.rb install
+	````chdir --Path where you extract: D:/devkit--````
+
+	````ruby dk.rb init````
+
+	````ruby dk.rb install````
 
 
 2. Install jekyll
      * Enter the following code
 
-     gem install jekyll -V
-     jekyll new my-awesome-site
-     cd my-awesome-site
-     jekyll serve
+     ````gem install jekyll -V````
+
+     ````jekyll new my-awesome-site````
+
+     ````cd my-awesome-site````
+     
+     ````jekyll serve````
 
