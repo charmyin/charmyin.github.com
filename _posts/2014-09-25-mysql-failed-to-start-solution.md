@@ -25,7 +25,6 @@ tags: [nodejs, npm]
 
 **Solution**
 
-**解决方法:**
 删除mysql前 先删除一下 /var/lib/mysql 还有 /etc/mysql
 
 ````sudo rm /var/lib/mysql/ -R````
