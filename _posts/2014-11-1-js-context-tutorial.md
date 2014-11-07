@@ -1,95 +1,35 @@
 ---
 layout: post
-title: "Js context introduction"
-description: "Js context introduction"
+title: "Reuse functions by prototype and apply in js"
+description: "Reuse functions by prototype and apply in js"
 category: [js]
 tags: [js, tutorial]
 ---
 
 ---------------------------------------
+**In this example, I reuse the pop function of Array.prototype to pop the first element of input arguments**
 
-**Origin**  [https://www.youtube.com/watch?v=fjJoX9F_F5g](https://www.youtube.com/watch?v=fjJoX9F_F5g)
+    var calculate = function(){
+        var fn = Array.prototype.pop.apply(arguments);
+        console.log(fn);
+        return fn.apply(null, arguments);
+    };
 
-###This in window context
-
-![WindowThis]({{ site.url }}/assets/images/2014-11-01/window-this.jpg)
-
-
-----------------------------------------
-
-###This In Global Function
-
-![This In Global Function]({{ site.url }}/assets/images/2014-11-01/thisInGlobalFunction.jpg)
-
-----------------------------------------
-
-###What is this
-
-![What is this]({{ site.url }}/assets/images/2014-11-01/3whatisthis.jpg)
-
-----------------------------------------
-
-###This in Object
-
-![This in Object]({{ site.url }}/assets/images/2014-11-01/4thisInObj.jpg)
-
-----------------------------------------
-
-###Three methods to change context
-
-![Three methods to change context]({{ site.url }}/assets/images/2014-11-01/5threeMethodsToChangeContext.jpg)
-
-**Method 1**
-
-      var obj = {
-        foo : function(){
-          console.log(this === window);
+    var sum = function(){
+        var total = 0;
+        for(var i=0, l=arguments.length; i<l; i=i+1){
+            total = total +arguments[i];
         }
-      };
-      //call
-      obj.foo.call(window);
+        return total;
+    };
 
-**Method 2**
+    var diff = function(x, y){
+        return x-y;
+    };
 
-      var obj = {
-        foo : function(){
-          console.log(this === window);
-        }
-      };
-      //call
-      obj.foo.apply(window);
 
-**Method 3**
+    var sumResult = calculate(1,2,3,4,5, sum),
+        diffResult = calculate(1,2, diff);
 
-      var obj = {
-        foo : function(){
-          console.log(this === window);
-        }
-      };
-      //call
-      var windowFoo = obj.foo.bind(window);
-      windowFoo();
-
-----------------------------------------
-
-###Bind to change Context
-
-![Bind to change Context]({{ site.url }}/assets/images/2014-11-01/6BindToChangeContext.jpg)
-
-----------------------------------------
-
-###Element context in event
-
-![Element context in event]({{ site.url }}/assets/images/2014-11-01/7ElementContextEvent.jpg)
-
-----------------------------------------
-
-###Get parent context by reference variable**
-
-![Get parent context by reference variable]({{ site.url }}/assets/images/2014-11-01/8pointToparentContext.jpg)
-
-----------------------------------------
-
-###Get parent context by methd bind
-
-![Get parent context by methd bind]({{ site.url }}/assets/images/2014-11-01/8pointToParentContext2.jpg)
+    alert(sumResult);
+    alert(diffResult);
