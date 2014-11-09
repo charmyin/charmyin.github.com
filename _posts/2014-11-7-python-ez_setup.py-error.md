@@ -2,8 +2,8 @@
 layout: post
 title: "Python ez_setup.py error solution"
 description: "setuptools,pip,install,UnicodeDecodeError: 'ascii' codec can't decode byte."
-category: [js]
-tags: [js, tutorial]
+category: [python]
+tags: [python, solution]
 ---
 
 ---------------------------------------
