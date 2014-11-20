@@ -15,6 +15,9 @@ Author: allen — allen@cubietech.com — 2014/03/26 16:50
 Copyrights: CC Attribution-Share Alike 3.0 Unported
 Contributors: Cubieboard Community :
 
+
+[http://docs.cubieboard.org/tutorials/common/how_to_use_the_uart](http://docs.cubieboard.org/tutorials/common/how_to_use_the_uart)
+
 ###Abstract
 
 Here is the guide to teach that how to enable the uart port on cubiboard and how to test the uart port is available .
