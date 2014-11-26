@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cubieboard uart usage"
+title: "Cubieboard--zigbee-communication"
 description: "Cubieboard uart usage"
 category: [cubieboard]
 tags: [cubieboard, uart]
