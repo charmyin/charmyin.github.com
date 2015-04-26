@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Discover network topology in z-stack"
-description: "Discover network topology in z-stack"
+title: "Get coordinator ieeaddress and related device network address"
+description: "Get coordinator ieeaddress and related device network address first"
 category: [zigbee]
 tags: [zigbee, topology]
 ---
 
 ---------------------------------------
 
-####Get coordinator ieeaddress and related device network address first
+####Get coordinator ieeaddress and related device network address
 
   1.注册请求响应事件
   ````ZDO_RegisterForZDOMsg( SampleApp_TaskID, IEEE_addr_rsp );````
